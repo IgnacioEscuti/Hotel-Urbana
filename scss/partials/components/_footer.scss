@@ -1,0 +1,14 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+
+footer {
+    background-color: variables.$nav-color;
+    @include mixins.flex(column, center, center);
+    padding: 20px;
+    color: black;
+
+    p {
+        margin: 0;
+        font-size: 14px;
+    }
+}

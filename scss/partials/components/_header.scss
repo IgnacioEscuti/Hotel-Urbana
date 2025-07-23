@@ -1,0 +1,31 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+
+header{
+    background-color:  variables.$nav-color;
+}
+/*         NAV       */
+.navbar-brand{
+    color: black;
+    font-size: 30px;
+}
+.navbar-nav{
+    padding: 30px;
+}
+.nav-item{
+    font-size: 22px;
+}
+.nav-link{
+    padding: 2px;
+    &:hover{
+        color: rgb(171, 171, 149);
+    }
+}
+.whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    z-index: 1000;
+}

@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+* {
+  font-family: "Lora", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style-type: none;
+}
+
+footer {
+  background-color: rgb(133, 133, 109);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: black;
+}
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+header {
+  background-color: rgb(133, 133, 109);
+}
+
+/*         NAV       */
+.navbar-brand {
+  color: black;
+  font-size: 30px;
+}
+
+.navbar-nav {
+  padding: 30px;
+}
+
+.nav-item {
+  font-size: 22px;
+}
+
+.nav-link {
+  padding: 2px;
+}
+.nav-link:hover {
+  color: rgb(171, 171, 149);
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  z-index: 1000;
+}
+
+body {
+  background-color: rgb(233, 233, 214);
+}
+
+h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 34px;
+  text-align: center;
+  padding: 60px;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  background-color: rgb(219, 219, 193);
+  margin: 60px;
+  display: grid;
+  grid-template-areas: "content-1-text content-1-img" "content-2-img content-2-text" "content-3-text content-3-img" "content-4-img content-4-text";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.content h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.content p {
+  font-size: 17px;
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
+.content img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-1-text {
+  grid-area: content-1-text;
+}
+
+.content-1-img {
+  grid-area: content-1-img;
+}
+
+.content-2-text {
+  grid-area: content-2-text;
+}
+
+.content-2-img {
+  grid-area: content-2-img;
+}
+
+.content-3-text {
+  grid-area: content-3-text;
+}
+
+.content-3-img {
+  grid-area: content-3-img;
+}
+
+.content-4-text {
+  grid-area: content-4-text;
+}
+
+.content-4-img {
+  grid-area: content-4-img;
+}
+
+.content-1-text, .content-2-text, .content-3-text, .content-4-text {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(133, 133, 109);
+  padding: 70px;
+  margin-bottom: 100px;
+  gap: 10px;
+}
+.contacto-info li {
+  list-style: none;
+  color: black;
+  font-size: 20px;
+  margin: 20px 0px;
+}
+.contacto-info h2 {
+  text-align: center;
+  font-size: 25px;
+  margin: 20px;
+}
+
+.habitaciones-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.habitaciones-intro p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 20px;
+}
+
+.habitaciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 40px;
+  flex-wrap: wrap;
+}
+.habitaciones img {
+  width: 100%;
+  height: 300px;
+  align-items: start;
+}
+.habitaciones h2 {
+  text-align: center;
+}
+.habitaciones p {
+  display: flex;
+  padding: 16px;
+  text-align: center;
+}
+
+.carousel-inner-habitaciones {
+  height: 300px;
+}
+
+.habitacion-text {
+  padding-bottom: 20px;
+}
+
+.habitacion-1, .habitacion-2, .habitacion-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(133, 133, 109);
+  gap: 20px;
+  width: 400px;
+  height: 442px;
+}
+
+.d-block {
+  object-fit: cover;
+}
+
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+.nosotros p {
+  padding: 30px 300px;
+  font-size: 20px;
+}
+
+.carousel-habitaciones {
+  width: 700px;
+  height: 500px;
+}
+.carousel-habitaciones img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.reservas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(133, 133, 109);
+  padding: 80px;
+  margin: 10px 400px 100px 400px;
+}
+.reservas input {
+  align-items: start;
+  font-size: 18px;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 8px;
+}
+.reservas h2 {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.boton-reserva ul {
+  list-style: none;
+  margin: 5px;
+  padding: 0px;
+}
+
+.form-select {
+  font-size: 18px;
+  padding: 8.5px;
+  margin-top: 9px;
+  color: #646363;
+}
+
+.form-control {
+  color: #646363;
+}
+
+.btn {
+  background-color: rgb(91, 91, 76);
+  border: none;
+  margin: 15px;
+}
+.btn:hover {
+  background-color: rgb(197, 197, 183);
+  border: none;
+}
+
+@media (max-width: 992px) {
+  .content {
+    margin: 35px;
+    grid-template-areas: "content-1-img" "content-1-text" "content-2-img" "content-2-text" "content-3-img" "content-3-text" "content-4-img" "content-4-text";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+  .content img {
+    width: 100%;
+  }
+  .reservas h2 {
+    font-size: 24px;
+  }
+  .reservas {
+    margin: 20px 30px 150px 30px;
+    padding: 60px;
+  }
+  .nosotros p {
+    padding: 20px 30px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 512px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .whatsapp {
+    width: 80px;
+    height: 80px;
+  }
+  .content-1-text, .content-2-text, .content-3-text, .content-4-text {
+    padding: 40px;
+  }
+  .content {
+    margin: 20px;
+  }
+  .content p {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .habitaciones {
+    margin: 10px;
+  }
+  .habitacion-1, .habitacion-2, .habitacion-4 {
+    background-color: rgb(233, 233, 214);
+    margin: 20px;
+    padding-bottom: 202px;
+    border-bottom: 1px solid rgb(133, 133, 109);
+  }
+  .reservas {
+    margin: 10px 20px 100px 20px;
+    padding: 40px;
+  }
+  .reservas h2 {
+    font-size: 24px;
+  }
+  .nosotros {
+    padding: 0px;
+    margin-bottom: 100px;
+    margin-top: 0px;
+  }
+  .nosotros p {
+    padding: 0px 30px 20px 30px;
+    font-size: 15px;
+  }
+  .carousel-habitaciones {
+    width: 400px;
+    height: 250px;
+  }
+  .carousel-habitaciones img {
+    height: 250px;
+  }
+}
+
+/*# sourceMappingURL=scss.css.map */
