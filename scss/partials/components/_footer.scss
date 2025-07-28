@@ -2,10 +2,10 @@
 @use "../utilities/mixins";
 
 footer {
-    background-color: variables.$nav-color;
+    background-color: variables.$beige-oscuro;
     @include mixins.flex(column, center, center);
     padding: 20px;
-    color: black;
+    color: variables.$font-color;
 
     p {
         margin: 0;

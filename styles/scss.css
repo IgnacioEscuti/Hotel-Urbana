@@ -191,7 +191,8 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 5px 20px;
+  margin: 5px 250px 30px 250px;
+  text-align: center;
 }
 
 .habitaciones {
@@ -204,17 +205,18 @@ main {
   flex-wrap: wrap;
 }
 .habitaciones img {
-  width: 100%;
+  width: 400px;
   height: 300px;
   align-items: start;
+  object-fit: cover;
 }
 .habitaciones h2 {
   text-align: center;
 }
 .habitaciones p {
-  display: flex;
-  padding: 16px;
   text-align: center;
+  font-size: 16px;
+  padding: 20px;
 }
 
 .carousel-inner-habitaciones {
@@ -234,6 +236,7 @@ main {
   gap: 20px;
   width: 400px;
   height: 442px;
+  margin: 10px;
 }
 
 .d-block {
@@ -247,19 +250,27 @@ main {
   align-items: center;
   padding: 20px;
   text-align: center;
+  position: relative;
 }
 .nosotros p {
-  padding: 30px 300px;
-  font-size: 20px;
+  margin: 20px;
+  padding: 100px 100px;
+  font-size: 16px;
+  position: absolute;
+  top: 25%;
+  background-color: rgba(67, 61, 61, 0.6);
+  color: white;
+  opacity: 0.8;
 }
-
-.carousel-habitaciones {
-  width: 700px;
-  height: 500px;
+.nosotros .carousel-habitaciones {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
 }
-.carousel-habitaciones img {
+.nosotros .carousel-habitaciones img {
+  height: 100%;
   width: 100%;
-  height: 500px;
   object-fit: cover;
 }
 
@@ -270,7 +281,7 @@ main {
   align-items: center;
   background-color: rgb(133, 133, 109);
   padding: 80px;
-  margin: 10px 400px 100px 400px;
+  margin: 10px 250px 100px 250px;
 }
 .reservas input {
   align-items: start;
@@ -286,12 +297,6 @@ main {
   margin-bottom: 20px;
 }
 
-.boton-reserva ul {
-  list-style: none;
-  margin: 5px;
-  padding: 0px;
-}
-
 .form-select {
   font-size: 18px;
   padding: 8.5px;
@@ -303,17 +308,7 @@ main {
   color: #646363;
 }
 
-.btn {
-  background-color: rgb(91, 91, 76);
-  border: none;
-  margin: 15px;
-}
-.btn:hover {
-  background-color: rgb(197, 197, 183);
-  border: none;
-}
-
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .content {
     margin: 35px;
     grid-template-areas: "content-1-img" "content-1-text" "content-2-img" "content-2-text" "content-3-img" "content-3-text" "content-4-img" "content-4-text";
@@ -323,31 +318,29 @@ main {
   .content img {
     width: 100%;
   }
-  .reservas h2 {
-    font-size: 24px;
+  .habitaciones-intro p {
+    margin: 5px 30px;
   }
   .reservas {
     margin: 20px 30px 150px 30px;
     padding: 60px;
   }
+  .reservas h2 {
+    font-size: 24px;
+  }
   .nosotros p {
-    padding: 20px 30px;
-    font-size: 15px;
+    padding: 50px 40px;
+  }
+  .nosotros .carousel-habitaciones {
+    width: 700px;
   }
 }
 @media (max-width: 512px) {
-  nav {
-    display: flex;
-    flex-direction: column;
-  }
-  .nav-links {
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-  }
   .whatsapp {
     width: 80px;
     height: 80px;
+    bottom: 10px;
+    right: 10px;
   }
   .content-1-text, .content-2-text, .content-3-text, .content-4-text {
     padding: 40px;
@@ -359,14 +352,21 @@ main {
     font-size: 14px;
     padding: 10px;
   }
+  .habitaciones-intro p {
+    margin: 5px 20px 120px 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(133, 133, 109);
+  }
   .habitaciones {
     margin: 10px;
+  }
+  .habitaciones p {
+    border-bottom: 1px solid rgb(133, 133, 109);
   }
   .habitacion-1, .habitacion-2, .habitacion-4 {
     background-color: rgb(233, 233, 214);
     margin: 20px;
     padding-bottom: 202px;
-    border-bottom: 1px solid rgb(133, 133, 109);
   }
   .reservas {
     margin: 10px 20px 100px 20px;
@@ -384,13 +384,31 @@ main {
     padding: 0px 30px 20px 30px;
     font-size: 15px;
   }
-  .carousel-habitaciones {
+  .nosotros p {
+    padding: 30px 20px;
+    font-size: 13px;
+    top: 0%;
+  }
+  .nosotros .carousel-habitaciones {
     width: 400px;
-    height: 250px;
   }
-  .carousel-habitaciones img {
-    height: 250px;
-  }
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.btn {
+  background-color: rgb(91, 91, 76);
+  border: none;
+  margin: 15px;
+}
+.btn:hover {
+  background-color: rgb(197, 197, 183);
+  border: none;
 }
 
 /*# sourceMappingURL=scss.css.map */

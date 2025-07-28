@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- css -->
     <link rel="stylesheet" href="../styles/scss.css">
     <title>Urbana hotel</title>
@@ -27,7 +31,7 @@
                             <a class="nav-link" href="contacto.html">contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="habitaciones.html">habitaciones</a>
+                            <a class="nav-link" data-aos="flip-up" href="habitaciones.html">habitaciones</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="nosotros.html">nosotros</a>
@@ -41,11 +45,13 @@
         </nav>
     </header>
     <main>
-        <img class="whatsapp" src="../imagenes/whatsapp.webp" alt="whatsapp-icon">
+        <a href="https://www.whatsapp.com/" target="_blank" class="whatsapp-link">
+            <img class="whatsapp" src="../imagenes/whatsapp.webp" alt="whatsapp-icon">
+        </a> 
         <section class="habitaciones-intro">
             <h1>habitaciones</h1>
             <p>En Urbana Hotel ofrecemos una variedad de habitaciones diseñadas para
-                tu comodidad y descanso. <br>    Cada habitación está equipada con todas las
+                tu comodidad y descanso. Cada habitación está equipada con todas las
                 comodidades necesarias para que disfrutes de una estancia placentera.</p>
         </section>
         <section class="habitaciones">
@@ -56,10 +62,7 @@
                             <img src="../imagenes/habitacion simple.jpg" class="d-block" alt="imagen del patio">
                         </div>
                         <div class="carousel-item">
-                            <img src="../imagenes/hotel4k.jpg" class="d-block" alt="imagen del patio interno">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../imagenes/hall.jpeg" class="d-block" alt="imagen del hall">
+                            <img src="../imagenes/baño.jpg" class="d-block" alt="imagen del patio interno">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
@@ -83,10 +86,7 @@
                             <img src="../imagenes/hab doble.jpeg" class="d-block" alt="imagen del patio">
                         </div>
                         <div class="carousel-item">
-                            <img src="../imagenes/patio interno.jpeg" class="d-block" alt="imagen del patio interno">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../imagenes/fotohabitacion.jpg" class="d-block" alt="imagen del hall">
+                            <img src="../imagenes/habitacion triple.jpg" class="d-block" alt="imagen del hall">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
@@ -110,10 +110,7 @@
                             <img src="../imagenes/hab cuadruple.jpeg" class="d-block" alt="imagen del patio">
                         </div>
                         <div class="carousel-item">
-                            <img src="../imagenes/simple.jpg" class="d-block" alt="imagen del patio interno">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../imagenes/hall.jpeg" class="d-block" alt="imagen del hall">
+                            <img src="../imagenes/habitacion triple roja.jpg" class="d-block" alt="imagen del patio interno">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample4" data-bs-slide="prev">
@@ -141,5 +138,10 @@
 
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+        <!-- aos js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
