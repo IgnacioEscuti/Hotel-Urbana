@@ -181,7 +181,7 @@ main{
     @include mixins.flex(column, center, center);
     background-color: variables.$beige-oscuro;
     padding: 80px;
-    margin: 10px 250px 100px 250px;
+    margin: 10px 250px 100px 0px;
 
     input{
         align-items: start;
@@ -311,7 +311,7 @@ main{
         p{
             padding: 30px 20px;
             font-size: 13px;
-            top: 0%;
+            top: -7px;
         }
     
     .carousel-habitaciones{

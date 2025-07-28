@@ -281,7 +281,7 @@ main {
   align-items: center;
   background-color: rgb(133, 133, 109);
   padding: 80px;
-  margin: 10px 250px 100px 250px;
+  margin: 10px 250px 100px 0px;
 }
 .reservas input {
   align-items: start;
@@ -387,7 +387,7 @@ main {
   .nosotros p {
     padding: 30px 20px;
     font-size: 13px;
-    top: 0%;
+    top: -7px;
   }
   .nosotros .carousel-habitaciones {
     width: 400px;
