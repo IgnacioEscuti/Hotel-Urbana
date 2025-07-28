@@ -281,7 +281,7 @@ main {
   align-items: center;
   background-color: rgb(133, 133, 109);
   padding: 80px;
-  margin: 10px 250px 100px 0px;
+  margin: 10px 250px 100px 250px;
 }
 .reservas input {
   align-items: start;

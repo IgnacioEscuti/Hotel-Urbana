@@ -181,7 +181,7 @@ main{
     @include mixins.flex(column, center, center);
     background-color: variables.$beige-oscuro;
     padding: 80px;
-    margin: 10px 250px 100px 0px;
+    margin: 10px 250px 100px 250px;
 
     input{
         align-items: start;
