@@ -19,7 +19,7 @@
         opacity: 0.8;
     }
 }
-.carousel-habitaciones {
+.carousel-habitaciones{
     width: 1000px;  
     height: 100%;     
     margin: 0 auto;   
@@ -31,13 +31,52 @@
         object-fit: cover; 
     }
 }
+.elegirnos{
+    display: grid;
+    grid-template-areas: 
+    "elegirnos-container nosotros-container";
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px 0px;
 
+}
+.elegirnos-container{
+    @include mixins.flex(column, center, center);
+    padding: 20px;
+    h2{
+        text-align: center;
+        margin: 30px;
+    }
+    li{
+        margin: 20px 0;
+    }
+}
+
+.nosotros-container{
+    @include mixins.flex(column, center, center);
+    text-align: center;
+    padding: 20px;
+    h2{
+        margin: 30px;
+    }
+    p{
+        padding: 0px 30px;
+    }
+}
 @media (max-width: 1024px) {
     .nosotros{
         p{
             padding: 50px 60px;
             top: 130px;
         }
+    }
+
+    .elegirnos{
+    display: grid;
+    grid-template-areas: 
+    "elegirnos-container"
+    "nosotros-container";
+    grid-template-columns: repeat(1, 2fr);
+    margin: 50px 0px;
     }
 }
 
@@ -46,12 +85,20 @@
         padding: 0px;
         margin-bottom: 100px;
         margin-top: 0px;
+        width: 100%;
 
         p{
-            margin: 0px;
-            padding: 42px 35px;
+            margin: 2px;
+            padding: 42px 36px;
             font-size: 13px;
-            top: 0px;
+            top: 30px;
         }
-    }  
+    .carousel-habitaciones{
+        width: 450px;  
+        height: 100%;   
+    }
+    } 
+    .elegirnos{
+        margin: 0px;
+    } 
 }

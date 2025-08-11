@@ -58,6 +58,15 @@
     padding: 60px;
     @include mixins.flex(column, center, center);
 }
+.servicios-index{
+    border-top: variables.$beige-oscuro solid 1px;
+    padding-top: 110px;
+}
+.galeria-index{
+    border-top: variables.$beige-oscuro solid 1px;
+    padding: 110px 0px;
+}
+
 
 @media (max-width: 1024px) {
     .content{

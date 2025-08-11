@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="../styles/style.css">
     <title>Urbana hotel</title>
@@ -51,15 +53,45 @@
         <a href="https://www.whatsapp.com/" target="_blank" class="whatsapp-link">
             <img class="whatsapp" src="../imagenes/whatsapp.webp" alt="whatsapp-icon">
         </a> 
+        <h1 class="h1-contacto">Nuestro contacto</h1>
+        <h2 class="h2-contacto">Una ubicaciones estrategica. Se encuentra ubicado a media cuadra del Hospital Allende y a 5 minutos del Estadio Mario Alberto Kempes, tambien tiene facil acceso a la circunvalacion.</h2>
         <section class="contacto">
-            <h1>Nuestro contacto</h1>
+            
             <div class="contacto-info">
-                <h2>No dudes en contactarnos a través de los siguientes medios:</h2>
+                <h2>Contactanos</h2>
                 <ul>
-                    <li>Teléfono: 3512565548</li>
-                    <li>Email: marito.focus@gmail.com</li>
-                    <li>instagram: @hotelurbana</li>
+                    <li><i class="fa-brands fa-whatsapp"></i> 3512565548</li>
+                    <li><i class="fa-brands fa-instagram"></i> hotelurbana</li>
+                    <li><i class="fa-brands fa-google"></i> urbana@gmail.com</li>                    
+                    <li><i class="fa-brands fa-facebook"></i> hotelurbana.ok</li>                   
                 </ul>   
+            </div>
+            <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3407.021762492318!2d-64.24628432455563!3d-31.358378674288637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329eb4df9aec91%3A0x1681d19b8862fa3c!2sUrbana%20Hotel!5e0!3m2!1ses!2sar!4v1754410932146!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2 class="h2-form">Formulario de contacto</h2>
+                <form class="form-contacto">
+                    <div class="form-group">
+                        <div>
+                        <h3>Nombre</h3>
+                        <input type="text" class="form-control" placeholder="Nombre completo">
+                        </div>
+                        <div>
+                        <h3>Email</h3>
+                        <input type="email" class="form-control" placeholder="Correo electronico">
+                    </div>
+                    </div>
+                    <div class="mensaje">
+                        <h3>Mensaje</h3>
+                        <textarea class="form-control" rows="4" placeholder="Escribe tu mensaje"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
